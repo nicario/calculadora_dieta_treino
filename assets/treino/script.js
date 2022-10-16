@@ -36,6 +36,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.add('d-none');
 
   }else if(exercicio.value == 'Esteira'){
     img.setAttribute('src', './assets/image/exercicioesteira.jpg')
@@ -58,6 +59,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.add('d-none');
   
   }else if(exercicio.value == 'Alternado M.') {
     img.setAttribute('src', './assets/image/exercicioalternadom.jpg')
@@ -67,6 +69,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Triceps C.') {
     img.setAttribute('src', './assets/image/exerciciotricepsc.jpg')
@@ -76,6 +79,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Triceps T.') {
     img.setAttribute('src', './assets/image/exerciciotricepst.jpg')
@@ -85,6 +89,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Triceps F.') {
     img.setAttribute('src', './assets/image/exerciciotricepsf.jpg')
@@ -94,6 +99,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.add('d-none');
  
   } else if(exercicio.value == 'Supino F.') {
     img.setAttribute('src', './assets/image/exerciciosupinof.jpg')
@@ -103,6 +109,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.add('d-none');
   
   }else if(exercicio.value == 'Supino R.') {
     img.setAttribute('src', './assets/image/exerciciosupinor.jpg')
@@ -112,6 +119,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Supino I.') {
     img.setAttribute('src', './assets/image/exerciciosupinoi.jpg')
@@ -121,6 +129,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.add('d-none');
   }
 
 })
