@@ -36,6 +36,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.remove('d-block');
     tempo_label.classList.add('d-none');
 
   }else if(exercicio.value == 'Esteira'){
@@ -59,6 +60,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.remove('d-block');
     tempo_label.classList.add('d-none');
   
   }else if(exercicio.value == 'Alternado M.') {
@@ -69,6 +71,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.remove('d-block');
     tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Triceps C.') {
@@ -79,6 +82,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.remove('d-block');
     tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Triceps T.') {
@@ -89,6 +93,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.remove('d-block');
     tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Triceps F.') {
@@ -99,6 +104,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.remove('d-block');
     tempo_label.classList.add('d-none');
  
   } else if(exercicio.value == 'Supino F.') {
@@ -109,6 +115,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.remove('d-block');
     tempo_label.classList.add('d-none');
   
   }else if(exercicio.value == 'Supino R.') {
@@ -119,6 +126,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.remove('d-block');
     tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Supino I.') {
@@ -129,6 +137,7 @@ exercicio.addEventListener('click', () => {
     repeticoes_label.classList.add('d-block');
     descanso_label.classList.remove('d-none');
     descanso_label.classList.add('d-block');
+    tempo_label.classList.remove('d-block');
     tempo_label.classList.add('d-none');
   }
 
