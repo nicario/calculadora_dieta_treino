@@ -17,7 +17,7 @@ let descanso = document.querySelector(".select3__section2");
 
 
 
-exercicio.addEventListener('click', () => {
+exercicio.addEventListener('mouseup', () => {
   if(exercicio.value == 'Rosca B.'){
     img.setAttribute('src', './assets/image/exercicioroscab.jpg');
     series_label.classList.remove('d-none');
