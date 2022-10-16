@@ -188,6 +188,8 @@ adicionar.addEventListener('click', (e) => {
       t = Math.round(t+(parseInt(descanso.value)*parseInt(series.value))+(parseInt(series.value)*40)/60)
     }else if(exercicio.value == 'Esteira'){
       t += parseInt(tempo_exerc.value) + parseInt(descanso.value);
+      i = Math.round(6*parseInt(tempo_exerc.value));
+      j += i;
     }
 
   calorias.textContent = `${j} cal`;
