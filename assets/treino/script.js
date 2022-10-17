@@ -219,7 +219,7 @@ adicionar.addEventListener('click', (e) => {
     
     divdiv.classList.add("d-flex", "justify-content-between", "align-items-center", "ps-3", "pe-3");
     divdiv2.classList.add("d-flex", "justify-content-between", "align-items-center", "ps-3", "pe-3");
-    divdiv3.classList.add("d-flex", "justify-content-between", "align-items-center", "ps-3", "pe-3");divextra.classList.add("border", "w-25", "h-25", "text-dark", "bg-warning", "p-2", "border-primary", "d-flex", "justify-content-around", "flex-column");
+    divdiv3.classList.add("d-flex", "justify-content-between", "align-items-center", "ps-3", "pe-3");divextra.classList.add("border", "w-50", "h-50", "text-dark", "bg-warning", "p-2", "border-primary", "d-flex", "justify-content-around", "flex-column");
 
     let i;
     let a = parseInt(serie.textContent);
