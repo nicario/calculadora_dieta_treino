@@ -20,8 +20,10 @@ let descanso = document.querySelector(".select3__section2");
 
 exercicio.addEventListener('change', () => {
   if(exercicio.value == 'Rosca B.'){
-    video.setAttribute('src', './assets/image/videoplayback.mp4');
+    video.setAttribute('src', './assets/image/exercicioroscab.mp4');
     video.classList.remove('d-none');
+    img.classList.remove('d-block');
+    img.classList.add('d-none');
     series_label.classList.remove('d-none');
     series_label.classList.add('d-block');
     repeticoes_label.classList.remove('d-none');
@@ -31,7 +33,10 @@ exercicio.addEventListener('change', () => {
     tempo_label.classList.add('d-none');
 
   } else if(exercicio.value == 'Rosca S.') {
-    img.setAttribute('src', './assets/image/exercicioroscas.jpg')
+    video.setAttribute('src', './assets/image/exercicioroscas.mp4');
+    video.classList.remove('d-none');
+    img.classList.remove('d-block');
+    img.classList.add('d-none');
     series_label.classList.remove('d-none');
     series_label.classList.add('d-block');
     repeticoes_label.classList.remove('d-none');
@@ -43,6 +48,9 @@ exercicio.addEventListener('change', () => {
 
   }else if(exercicio.value == 'Esteira'){
     img.setAttribute('src', './assets/image/exercicioesteira.jpg')
+    img.classList.remove('d-none');
+    img.classList.add('d-block');
+    video.classList.add('d-none');
     series_label.classList.remove('d-block');
     series_label.classList.add('d-none');
     repeticoes_label.classList.remove('d-block');
@@ -55,7 +63,10 @@ exercicio.addEventListener('change', () => {
     repeticoes.value = 0;
 
   } else if(exercicio.value == 'Alternado H.') {
-    img.setAttribute('src', './assets/image/exercicioalternadoh.jpg')
+    video.setAttribute('src', './assets/image/exercicioalternadoh.mp4');
+    video.classList.remove('d-none');
+    img.classList.remove('d-block');
+    img.classList.add('d-none');
     series_label.classList.remove('d-none');
     series_label.classList.add('d-block');
     repeticoes_label.classList.remove('d-none');
@@ -66,7 +77,10 @@ exercicio.addEventListener('change', () => {
     tempo_label.classList.add('d-none');
   
   }else if(exercicio.value == 'Alternado M.') {
-    img.setAttribute('src', './assets/image/exercicioalternadom.jpg')
+    video.setAttribute('src', './assets/image/exercicioalternadom.mp4');
+    video.classList.remove('d-none');
+    img.classList.remove('d-block');
+    img.classList.add('d-none');
     series_label.classList.remove('d-none');
     series_label.classList.add('d-block');
     repeticoes_label.classList.remove('d-none');
@@ -77,7 +91,10 @@ exercicio.addEventListener('change', () => {
     tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Triceps C.') {
-    img.setAttribute('src', './assets/image/exerciciotricepsc.jpg')
+    video.setAttribute('src', './assets/image/exerciciotricepsc.mp4');
+    video.classList.remove('d-none');
+    img.classList.remove('d-block');
+    img.classList.add('d-none');
     series_label.classList.remove('d-none');
     series_label.classList.add('d-block');
     repeticoes_label.classList.remove('d-none');
@@ -88,7 +105,10 @@ exercicio.addEventListener('change', () => {
     tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Triceps T.') {
-    img.setAttribute('src', './assets/image/exerciciotricepst.jpg')
+    video.setAttribute('src', './assets/image/exerciciotricepst.mp4');
+    video.classList.remove('d-none');
+    img.classList.remove('d-block');
+    img.classList.add('d-none');
     series_label.classList.remove('d-none');
     series_label.classList.add('d-block');
     repeticoes_label.classList.remove('d-none');
@@ -99,7 +119,10 @@ exercicio.addEventListener('change', () => {
     tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Triceps F.') {
-    img.setAttribute('src', './assets/image/exerciciotricepsf.jpg')
+    video.setAttribute('src', './assets/image/exerciciotricepsf.mp4');
+    video.classList.remove('d-none');
+    img.classList.remove('d-block');
+    img.classList.add('d-none');
     series_label.classList.remove('d-none');
     series_label.classList.add('d-block');
     repeticoes_label.classList.remove('d-none');
@@ -110,7 +133,10 @@ exercicio.addEventListener('change', () => {
     tempo_label.classList.add('d-none');
  
   } else if(exercicio.value == 'Supino F.') {
-    img.setAttribute('src', './assets/image/exerciciosupinof.jpg')
+    video.setAttribute('src', './assets/image/exerciciosupinof.mp4');
+    video.classList.remove('d-none');
+    img.classList.remove('d-block');
+    img.classList.add('d-none');
     series_label.classList.remove('d-none');
     series_label.classList.add('d-block');
     repeticoes_label.classList.remove('d-none');
@@ -121,7 +147,10 @@ exercicio.addEventListener('change', () => {
     tempo_label.classList.add('d-none');
   
   }else if(exercicio.value == 'Supino R.') {
-    img.setAttribute('src', './assets/image/exerciciosupinor.jpg')
+    video.setAttribute('src', './assets/image/exerciciosupinor.mp4');
+    video.classList.remove('d-none');
+    img.classList.remove('d-block');
+    img.classList.add('d-none');
     series_label.classList.remove('d-none');
     series_label.classList.add('d-block');
     repeticoes_label.classList.remove('d-none');
@@ -132,7 +161,10 @@ exercicio.addEventListener('change', () => {
     tempo_label.classList.add('d-none');
   
   } else if(exercicio.value == 'Supino I.') {
-    img.setAttribute('src', './assets/image/exerciciosupinoi.jpg')
+    video.setAttribute('src', './assets/image/exerciciosupinoi.mp4');
+    video.classList.remove('d-none');
+    img.classList.remove('d-block');
+    img.classList.add('d-none');
     series_label.classList.remove('d-none');
     series_label.classList.add('d-block');
     repeticoes_label.classList.remove('d-none');
