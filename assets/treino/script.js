@@ -180,12 +180,16 @@ exercicio.addEventListener('change', () => {
 adicionar.addEventListener('click', (e) => {
     e.preventDefault(); 
     let divextra = document.createElement("div");
+    let divdiv = document.createElement("div");
+    let divdiv2 = document.createElement("div");
+    let divdiv3 = document.createElement("div");
     let inform = document.createElement("h5");
     let texto = document.createElement("p");
     let seriextra = document.createElement("h5");
     let textoextra = document.createElement("p");
     let repeticaoextra = document.createElement("h5");
     let textoextraextra = document.createElement("p");
+    let remover = document.createElement("span");
     
     inform.append("Exercicio:");
     texto.append(exercicio.value)
@@ -195,18 +199,28 @@ adicionar.addEventListener('click', (e) => {
 
     repeticaoextra.append("Repetições:");
     textoextraextra.append(repeticoes.value);
+
+    remover.classList.add("material-symbols-outlined");
+    remover.append("close");
     
-    divextra.appendChild(inform);
-    divextra.appendChild(texto);
-    divextra.appendChild(seriextra);
-    divextra.appendChild(textoextra);
-    divextra.appendChild(repeticaoextra);
-    divextra.appendChild(textoextraextra);
+    divextra.appendChild(remover);
+    divextra.appendChild(divdiv);
+    divextra.appendChild(divdiv2);
+    divextra.appendChild(divdiv3);
+    divdiv.appendChild(inform);
+    divdiv.appendChild(texto);
+    divdiv2.appendChild(seriextra);
+    divdiv2.appendChild(textoextra);
+    divdiv3.appendChild(repeticaoextra);
+    divdiv3.appendChild(textoextraextra);
 
     
     div.appendChild(divextra);
     
-    divextra.classList.add("border", "w-25", "h-25", "text-dark", "bg-warning", "p-2", "border-primary");
+    divdiv.classList.add("d-flex", "justify-content-between", "align-items-center", "ps-3", "pe-3");
+    divdiv2.classList.add("d-flex", "justify-content-between", "align-items-center", "ps-3", "pe-3");
+    divdiv3.classList.add("d-flex", "justify-content-between", "align-items-center", "ps-3", "pe-3");divextra.classList.add("border", "w-25", "h-25", "text-dark", "bg-warning", "p-2", "border-primary", "d-flex", "justify-content-around", "flex-column");
+
     let i;
     let a = parseInt(serie.textContent);
     let b = parseInt(repeticao.textContent);
@@ -219,7 +233,7 @@ adicionar.addEventListener('click', (e) => {
       j += i;
       a += parseInt(series.value);
       b += (parseInt(repeticoes.value)*parseInt(series.value));
-      t = Math.round(t+(parseInt(descanso.value)*parseInt(series.value))+(parseInt(series.value)*40)/60)
+      t = Math.round(t+(parseInt(descanso.value)*parseInt(series.value))+(parseInt(series.value)*0.40)/60)
     }else if(exercicio.value == 'Esteira'){
       t += parseInt(tempo_exerc.value) + parseInt(descanso.value);
       i = Math.round(6*parseInt(tempo_exerc.value));
@@ -231,6 +245,24 @@ adicionar.addEventListener('click', (e) => {
   repeticao.textContent = b;
   tempo.textContent = `${t} minutos`;
   
+  remover.addEventListener('click', () => {
+    div.removeChild(divextra);
+    if(exercicio.value == 'Rosca B.' || exercicio.value == 'Rosca S.' || exercicio.value == 'Alternado H.' || exercicio.value == 'Alternado M.' || exercicio.value == 'Triceps C.' || exercicio.value == 'Triceps T.' || exercicio.value == 'Triceps F.' || exercicio.value == 'Supino F.' || exercicio.value == 'Supino R.' || exercicio.value == 'Supino I.'){
+      i =  Math.round((repeticoes.value*1.17)*series.value);
+      j -= i;
+      a -= parseInt(series.value);
+      b -= (parseInt(repeticoes.value)*parseInt(series.value));
+      t = Math.round(t-(parseInt(descanso.value)*parseInt(series.value))+(parseInt(series.value)*0.40)/60)
+    }else if(exercicio.value == 'Esteira'){
+      t -= parseInt(tempo_exerc.value) + parseInt(descanso.value);
+      i = Math.round(6*parseInt(tempo_exerc.value));
+      j -= i;
+    }
 
+  calorias.textContent = `${j} cal`;
+  serie.textContent = a;
+  repeticao.textContent = b;
+  tempo.textContent = `${t} minutos`;
+  })
 
 })
