@@ -9,6 +9,7 @@ let repeticao = document.querySelector(".p3__section");
 let tempo = document.querySelector(".p4__section");
 let tempo_exerc = document.querySelector(".select2__section2");
 let img = document.querySelector("#img");
+let video = document.querySelector("#video");
 let tempo_label = document.querySelector(".div6__section2");
 let series_label = document.querySelector(".div2__section2");
 let repeticoes_label = document.querySelector(".div3__section2");
@@ -19,7 +20,8 @@ let descanso = document.querySelector(".select3__section2");
 
 exercicio.addEventListener('change', () => {
   if(exercicio.value == 'Rosca B.'){
-    img.setAttribute('src', './assets/image/exercicioroscab.jpg');
+    video.setAttribute('src', './assets/image/videoplayback.mp4');
+    video.classList.remove('d-none');
     series_label.classList.remove('d-none');
     series_label.classList.add('d-block');
     repeticoes_label.classList.remove('d-none');
